@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pravar.sidepanel.Developerfragment">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="150dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:layout_height="150dp"
+    android:id="@+id/myimg"
+    android:src="@drawable/aab"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myimg"
+        android:text="Pravar Chanda"
+        android:id="@+id/imgme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="40dp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Developer"
+        android:textSize="20dp"
+        android:id="@+id/imgus"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgme"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#959595"
+        android:layout_below="@+id/imgus"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FACEBOOK"
+        android:id="@+id/buttonfb"
+        android:textColor="#fff"
+        android:background="#3b5998"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="27dp"
+        android:layout_alignRight="@+id/imgme"
+        android:layout_alignEnd="@+id/imgme"
+        android:layout_alignLeft="@+id/imgme"
+        android:layout_alignStart="@+id/imgme" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LINKEDIN"
+        android:layout_marginTop="8dp"
+        android:textColor="#fff"
+        android:background="#0077b5"
+        android:id="@+id/buttonln"
+        android:layout_below="@+id/buttonfb"
+        android:layout_alignRight="@+id/buttonqr"
+        android:layout_alignEnd="@+id/buttonqr"
+        android:layout_alignLeft="@+id/buttonqr"
+        android:layout_alignStart="@+id/buttonqr" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUORA"
+        android:background="#a82400"
+        android:textColor="#fff"
+        android:layout_marginTop="8dp"
+        android:id="@+id/buttonqr"
+        android:layout_below="@+id/buttonln"
+        android:layout_alignRight="@+id/buttonfb"
+        android:layout_alignEnd="@+id/buttonfb"
+        android:layout_alignLeft="@+id/buttonfb"
+        android:layout_alignStart="@+id/buttonfb" />
+</RelativeLayout>
